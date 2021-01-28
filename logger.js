@@ -3,12 +3,19 @@ const EventEmitter = require('events');      // returns the EventEmitter Class
 let url = "http://somewebsite.com/log"; // fake logger api
 
 class Logger extends EventEmitter {
+    /**
+     *  @param {string} message
+     *  @returns {number}
+    **/
     log = (message) => {
         // send http request
         console.log(message);
 
         // raise an event
         this.emit('messageLogged', { id: 1, url: 'butt.org' });
+        let x = 1;
+        return 1;
+
     };
 }
 
