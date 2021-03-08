@@ -21,6 +21,6 @@ class Logger extends EventEmitter {
 
 // can export module parts with module object
 // module.exports.log = log;   // this will export the log as an object with a function prop
-module.exports = Logger;        // this is export the function alone
+module.exports = Logger;        // this is export the class alone
 // can be enported with a different name like so
 module.exports.apiEndpoint = url; 
